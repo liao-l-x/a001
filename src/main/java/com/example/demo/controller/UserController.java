@@ -18,6 +18,6 @@ public class UserController {
     @RequestMapping("/thymeleaf")
     public String testThymeleaf(Model model) {
         model.addAttribute("name","thymeleaf测试");
-        return "thymeleaf-test";
+        return "index";
     }
 }
