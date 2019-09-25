@@ -1,10 +1,10 @@
 package com.example.demo.service;
 
 
-import com.example.demo.model.User;
+import com.example.demo.model.usertoo;
 
 public interface UserService {
 
 
-    User findByUsername(String username);
+    usertoo findByUsername(String username);
 }

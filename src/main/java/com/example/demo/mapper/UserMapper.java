@@ -1,9 +1,8 @@
 package com.example.demo.mapper;
 
-import com.example.demo.model.User;
-import org.apache.ibatis.annotations.Param;
+import com.example.demo.model.usertoo;
 
 public interface UserMapper {
 
-    User findByUsername(@Param("username") String username);
+    usertoo findByUserName(String userName);
 }

@@ -1,6 +1,6 @@
 package com.example.demo.shiro;
 
-import com.example.demo.model.User;
+import com.example.demo.model.usertoo;
 import com.example.demo.service.UserService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -32,7 +32,9 @@ public class UserRealm extends AuthorizingRealm{
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
         UsernamePasswordToken usernamePasswordToken = (UsernamePasswordToken)authenticationToken;
         String username = usernamePasswordToken.getUsername();
-        User user = userService.findByUsername(username);
+        usertoo user = userService.findByUsername(username);
         return new SimpleAuthenticationInfo(user,user.getPassword(),this.getClass().getName());
     }
 }
+
+
